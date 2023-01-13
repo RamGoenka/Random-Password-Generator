@@ -7,7 +7,7 @@ def generate_password(pass_length):
     symbols = string.punctuation
 
     password_combo = letters + digits + symbols
-    password = random.sample(password_combo, length)
+    password = random.sample(password_combo, pass_length)
 
     return "".join(password)
 
